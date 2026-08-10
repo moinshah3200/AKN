@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakat Calculator — AKN Trust</title>
+<meta name="description" content="Work out your zakat with AKN Trust — choose the gold (87.48 g) or silver (612.36 g) nisab, enter your assets and liabilities, and see the 2.5% due instantly. Computed on your device; nothing is sent anywhere.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="alternate" hreflang="ur" href="ur/zakat.html">
+<link rel="alternate" hreflang="en" href="zakat.html">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function(){try{var t=localStorage.getItem('akn-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<meta name="theme-color" content="#0B4A38">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= Header ================= -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="AKN Trust — home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2.2">
+          <rect x="14.5" y="14.5" width="35" height="35"/>
+          <rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/>
+        </g>
+        <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+      </svg>
+      <span class="brand-name">
+        <b>AKN Trust</b>
+        <span>Anwar Khatm-e-Nabuwat</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="medical-center.html">Medical Center</a>
+      <a href="impact.html">Impact</a>
+      <div class="navdrop" data-drop>
+        <button class="navbtn" aria-expanded="false" aria-haspopup="true">Tools
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="menu" role="menu">
+          <a href="prayer-times.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Prayer Times</a>
+          <a href="qibla.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>Qibla Direction</a>
+          <a href="tasbeeh.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="6.5" cy="8.5" r="1.6"/><circle cx="17.5" cy="8.5" r="1.6"/><circle cx="5" cy="14.5" r="1.6"/><circle cx="19" cy="14.5" r="1.6"/><circle cx="8.5" cy="19" r="1.6"/><circle cx="15.5" cy="19" r="1.6"/></svg>Tasbeeh Counter</a>
+          <a href="duas.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M4 18.5V5.5"/></svg>Duas &amp; Supplications</a>
+          <a href="hadith.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M12 4c-2-1.6-4.6-2-8-2v16c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V2c-3.4 0-6 .4-8 2Z"/><path d="M12 4v16"/></svg>Hadith</a>
+          <a href="names.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m12 2 2.4 7.2H22l-6 4.5 2.3 7.3-6.3-4.5-6.3 4.5L8 13.7l-6-4.5h7.6Z"/></svg>99 Names of Allah</a>
+          <a href="zakat.html" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h3.6a1.9 1.9 0 0 1 0 3.8H10.8a1.9 1.9 0 0 0 0 3.8h4"/></svg>Zakat Calculator</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="head-actions">
+      <a class="lang-link" href="ur/zakat.html" lang="ur" hreflang="ur" title="اردو میں دیکھیں"><span class="ur">اردو</span></a>
+      <button class="iconbtn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="i-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="i-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2m0 14.6v2.2M2.5 12h2.2m14.6 0h2.2M5 5l1.6 1.6M17.4 17.4 19 19M5 19l1.6-1.6M17.4 6.6 19 5"/></svg>
+      </button>
+      <a class="btn btn-gold donate-head" href="donate.html">Donate</a>
+      <button class="iconbtn burger" data-burger aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3.5 6.5h17m-17 5.5h17m-17 5.5h17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile sheet -->
+<div class="sheet" data-sheet>
+  <button class="iconbtn sheet-close" data-sheet-close aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About the Trust</a>
+  <a href="departments.html">Departments</a>
+  <a href="medical-center.html">Rafiq Medical Center</a>
+  <a href="impact.html">Impact 2025</a>
+  <a href="donate.html">Donate</a>
+  <a href="contact.html">Contact</a>
+  <div class="sheet-sub">Islamic tools</div>
+  <a href="prayer-times.html">Prayer Times</a>
+  <a href="qibla.html">Qibla Direction</a>
+  <a href="tasbeeh.html">Tasbeeh Counter</a>
+  <a href="duas.html">Duas &amp; Supplications</a>
+  <a href="hadith.html">Hadith</a>
+  <a href="names.html">99 Names of Allah</a>
+  <a href="zakat.html" aria-current="page">Zakat Calculator</a>
+  <div class="sheet-sub" lang="ur"><a href="ur/zakat.html" class="ur" hreflang="ur">اردو ویب سائٹ</a></div>
+</div>
+
+<main id="main">
+
+<!-- ================= Tool hero ================= -->
+<section class="tool-hero pattern-star">
+  <div class="wrap reveal in">
+    <span class="kicker">Islamic tools</span>
+    <h1>Zakat Calculator</h1>
+    <p class="lead">Work out the 2.5% due on your wealth by the gold or silver nisab. Everything is
+    computed on your own device — nothing you type is sent anywhere.</p>
+  </div>
+</section>
+
+<!-- ================= App ================= -->
+<section class="section">
+  <div class="wrap tool-shell">
+
+    <!-- Panel 1 — inputs -->
+    <div class="panel reveal in">
+      <div class="field" style="margin-bottom:6px">
+        <label id="zk-basis-label">Nisab basis</label>
+        <div class="seg" role="group" aria-labelledby="zk-basis-label">
+          <button type="button" data-basis="gold" aria-pressed="false">Gold · 87.48 g</button>
+          <button type="button" data-basis="silver" aria-pressed="true">Silver · 612.36 g</button>
+        </div>
+      </div>
+      <p class="muted" style="font-size:.9rem;margin-top:0">Most scholars advise the silver nisab as the safer basis for giving — it sets the lower threshold, so more zakat reaches the deserving.</p>
+
+      <div class="fields" style="margin-top:10px">
+        <div class="field">
+          <label for="zk-gold-price">Gold price per gram (₨)</label>
+          <input type="number" id="zk-gold-price" min="0" step="any" inputmode="decimal" placeholder="₨ per gram — today's rate">
+        </div>
+        <div class="field">
+          <label for="zk-silver-price">Silver price per gram (₨)</label>
+          <input type="number" id="zk-silver-price" min="0" step="any" inputmode="decimal" placeholder="₨ per gram — today's rate">
+        </div>
+      </div>
+
+      <h2 style="font-size:1.1rem;margin:22px 0 10px">Your zakatable assets</h2>
+      <div class="fields">
+        <div class="field">
+          <label for="zk-cash">Cash in hand (₨)</label>
+          <input type="number" id="zk-cash" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+        <div class="field">
+          <label for="zk-bank">Bank balances (₨)</label>
+          <input type="number" id="zk-bank" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+        <div class="field">
+          <label for="zk-gold">Value of gold owned (₨)</label>
+          <input type="number" id="zk-gold" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+        <div class="field">
+          <label for="zk-silver">Value of silver owned (₨)</label>
+          <input type="number" id="zk-silver" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+        <div class="field">
+          <label for="zk-stock">Business stock (₨)</label>
+          <input type="number" id="zk-stock" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+        <div class="field">
+          <label for="zk-receivables">Money owed to you (₨)</label>
+          <input type="number" id="zk-receivables" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+      </div>
+
+      <h2 style="font-size:1.1rem;margin:22px 0 10px">Your liabilities</h2>
+      <div class="fields">
+        <div class="field">
+          <label for="zk-debts">Debts due for payment (₨)</label>
+          <input type="number" id="zk-debts" min="0" step="any" inputmode="decimal" placeholder="₨ 0">
+        </div>
+      </div>
+      <noscript><p class="muted" style="margin-top:14px">The calculator needs JavaScript. Without it, use the rule by hand: if your wealth after debts is at or above the nisab (87.48 g of gold or 612.36 g of silver, at today&rsquo;s price), zakat is 2.5% of that wealth.</p></noscript>
+    </div>
+
+    <!-- Panel 2 — result -->
+    <div class="panel reveal in" aria-live="polite">
+      <div class="zk-total">
+        <span>Zakatable wealth<br><b data-zk-wealth>₨ 0</b></span>
+        <span>Nisab<br><b data-zk-nisab>—</b></span>
+        <span>Zakat due (2.5%)<br><b data-zk-due>—</b></span>
+      </div>
+      <p class="zk-note" style="margin:14px 0 0;font-weight:600" data-zk-msg>Enter the silver price per gram to work out your nisab.</p>
+      <p class="zk-note" style="margin-top:8px">Zakat falls due on wealth held for one full lunar year at or above the nisab — 87.48 g of gold or 612.36 g of silver at today&rsquo;s market price. This calculator applies the standard 2.5% rate; for business assets, shares, pensions or any unusual case, please consult a scholar.</p>
+    </div>
+
+    <!-- CTA — give your zakat -->
+    <div class="cta-band pattern-gold pattern-star reveal in" style="margin-top:18px">
+      <div class="split">
+        <div>
+          <span class="kicker" style="color:var(--gold-soft)">Zakat · Sadaqah · Atiyat</span>
+          <h2>Give your zakat where it reaches the deserving</h2>
+          <p>AKN Trust turns zakat into monthly ration for 90,000+ people, stipends for widows
+          and orphans, and the support of new Muslims. Call or WhatsApp and our team will collect
+          it from your home — cash or cheque.</p>
+        </div>
+        <div>
+          <p class="mb-0"><a class="tel" href="tel:+923048012789">0304-8012789</a></p>
+          <p class="mb-2"><a class="tel" href="tel:+923134356695">0313-4356695</a></p>
+          <div class="flex g-2 wrap-row">
+            <a class="btn btn-gold" href="https://wa.me/923048012789" rel="noopener">WhatsApp us</a>
+            <a class="btn btn-ghost" style="color:#F3F7F0;border-color:rgba(255,255,255,.4)" href="donate.html">Ways to give</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-foot">
+  <div class="pattern-star">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="14.5" y="14.5" width="35" height="35"/><rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/></g>
+            <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+          </svg>
+          <span class="brand-name"><b style="color:#fff">AKN Trust</b><span style="color:var(--gold)">A New Hope · Est. 2013</span></span>
+        </div>
+        <p>Anwar Khatm-e-Nabuwat Trust Pakistan — defending the finality of Prophethood ﷺ and
+        serving humanity: ration, water, homes, education, healthcare and the support of new
+        Muslims across Pakistan.</p>
+        <p class="ur" lang="ur" dir="rtl" style="color:var(--gold-soft)">انوار ختم نبوت ٹرسٹ پاکستان</p>
+      </div>
+      <nav aria-label="Footer — Trust">
+        <div class="foot-title">The Trust</div>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="medical-center.html">Rafiq Medical Center</a></li>
+          <li><a href="impact.html">Impact 2025</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer — Tools">
+        <div class="foot-title">Tools</div>
+        <ul>
+          <li><a href="prayer-times.html">Prayer Times</a></li>
+          <li><a href="qibla.html">Qibla Direction</a></li>
+          <li><a href="tasbeeh.html">Tasbeeh Counter</a></li>
+          <li><a href="duas.html">Duas &amp; Supplications</a></li>
+          <li><a href="hadith.html">Hadith</a></li>
+          <li><a href="names.html">99 Names of Allah</a></li>
+          <li><a href="zakat.html">Zakat Calculator</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div class="foot-title">Contact</div>
+        <ul class="foot-contact">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Markaz: Chenab Nagar (Mohalla Nusratabad), District Chiniot, Punjab</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>55-Ghani Street, Rajgarh, Lahore</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></svg><a href="tel:+923048012789" style="display:inline;padding:0">0304-8012789</a> · <a href="tel:+923134356695" style="display:inline;padding:0">0313-4356695</a></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>Monthly magazine «Anwar Khatm-e-Nabuwat» · AKN63Channel</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> Anwar Khatm-e-Nabuwat Trust Pakistan. All rights reserved.</span>
+      <span lang="ar" dir="rtl" class="ar" style="font-size:1.05em">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</span>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script>
+window.AKN_L10N = {
+  prayers: { fajr:'Fajr', sunrise:'Sunrise', dhuhr:'Dhuhr', asr:'Asr', maghrib:'Maghrib', isha:'Isha' },
+  inLabel: 'in ', h: 'h ', m: 'm'
+};
+</script>
+<script src="assets/js/main.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
+  var GRAMS = { gold: 87.48, silver: 612.36 };
+  var basis = 'silver';
+
+  var segBtns  = document.querySelectorAll('.seg [data-basis]');
+  var wealthEl = document.querySelector('[data-zk-wealth]');
+  var nisabEl  = document.querySelector('[data-zk-nisab]');
+  var dueEl    = document.querySelector('[data-zk-due]');
+  var msgEl    = document.querySelector('[data-zk-msg]');
+
+  var assetIds = ['zk-cash', 'zk-bank', 'zk-gold', 'zk-silver', 'zk-stock', 'zk-receivables'];
+
+  function val(id) {
+    var v = parseFloat(document.getElementById(id).value);
+    return isFinite(v) && v > 0 ? v : 0;
+  }
+  function rs(n) {
+    return '₨ ' + Math.round(n).toLocaleString('en-IN');
+  }
+
+  function compute() {
+    var assets = 0;
+    assetIds.forEach(function (id) { assets += val(id); });
+    var wealth = Math.max(0, assets - val('zk-debts'));
+    wealthEl.textContent = rs(wealth);
+
+    var price = val(basis === 'gold' ? 'zk-gold-price' : 'zk-silver-price');
+    if (price <= 0) {
+      nisabEl.textContent = '—';
+      dueEl.textContent = '—';
+      msgEl.textContent = 'Enter the ' + basis + ' price per gram to work out your nisab.';
+      return;
+    }
+
+    var nisab = GRAMS[basis] * price;
+    nisabEl.textContent = rs(nisab);
+
+    if (wealth >= nisab && wealth > 0) {
+      dueEl.textContent = rs(wealth * 0.025);
+      msgEl.textContent = 'Zakat is due on your wealth this year. May Allah accept and bless what you give.';
+    } else {
+      dueEl.textContent = '—';
+      msgEl.textContent = 'Your wealth is below the ' + basis + ' nisab of ' + rs(nisab) + ' — zakat is not due. Sadaqah is always open, and every rupee still reaches the deserving.';
+    }
+  }
+
+  segBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      basis = btn.getAttribute('data-basis');
+      segBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
+      compute();
+    });
+  });
+
+  ['input', 'change'].forEach(function (evt) {
+    document.querySelectorAll('.field input[type="number"]').forEach(function (inp) {
+      inp.addEventListener(evt, compute);
+    });
+  });
+
+  compute();
+});
+</script>
+</body>
+</html>

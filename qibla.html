@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qibla Direction — AKN Trust</title>
+<meta name="description" content="Find the qibla from your city or your exact location — bearing to the Kaaba in degrees from North, distance in kilometres, and a live device compass where supported. An Islamic tool by AKN Trust.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="alternate" hreflang="ur" href="ur/qibla.html">
+<link rel="alternate" hreflang="en" href="qibla.html">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function(){try{var t=localStorage.getItem('akn-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<meta name="theme-color" content="#0B4A38">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= Header ================= -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="AKN Trust — home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2.2">
+          <rect x="14.5" y="14.5" width="35" height="35"/>
+          <rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/>
+        </g>
+        <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+      </svg>
+      <span class="brand-name">
+        <b>AKN Trust</b>
+        <span>Anwar Khatm-e-Nabuwat</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="medical-center.html">Medical Center</a>
+      <a href="impact.html">Impact</a>
+      <div class="navdrop" data-drop>
+        <button class="navbtn" aria-expanded="false" aria-haspopup="true">Tools
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="menu" role="menu">
+          <a href="prayer-times.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Prayer Times</a>
+          <a href="qibla.html" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>Qibla Direction</a>
+          <a href="tasbeeh.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="6.5" cy="8.5" r="1.6"/><circle cx="17.5" cy="8.5" r="1.6"/><circle cx="5" cy="14.5" r="1.6"/><circle cx="19" cy="14.5" r="1.6"/><circle cx="8.5" cy="19" r="1.6"/><circle cx="15.5" cy="19" r="1.6"/></svg>Tasbeeh Counter</a>
+          <a href="duas.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M4 18.5V5.5"/></svg>Duas &amp; Supplications</a>
+          <a href="hadith.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M12 4c-2-1.6-4.6-2-8-2v16c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V2c-3.4 0-6 .4-8 2Z"/><path d="M12 4v16"/></svg>Hadith</a>
+          <a href="names.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m12 2 2.4 7.2H22l-6 4.5 2.3 7.3-6.3-4.5-6.3 4.5L8 13.7l-6-4.5h7.6Z"/></svg>99 Names of Allah</a>
+          <a href="zakat.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h3.6a1.9 1.9 0 0 1 0 3.8H10.8a1.9 1.9 0 0 0 0 3.8h4"/></svg>Zakat Calculator</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="head-actions">
+      <a class="lang-link" href="ur/qibla.html" lang="ur" hreflang="ur" title="اردو میں دیکھیں"><span class="ur">اردو</span></a>
+      <button class="iconbtn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="i-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="i-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2m0 14.6v2.2M2.5 12h2.2m14.6 0h2.2M5 5l1.6 1.6M17.4 17.4 19 19M5 19l1.6-1.6M17.4 6.6 19 5"/></svg>
+      </button>
+      <a class="btn btn-gold donate-head" href="donate.html">Donate</a>
+      <button class="iconbtn burger" data-burger aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3.5 6.5h17m-17 5.5h17m-17 5.5h17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile sheet -->
+<div class="sheet" data-sheet>
+  <button class="iconbtn sheet-close" data-sheet-close aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About the Trust</a>
+  <a href="departments.html">Departments</a>
+  <a href="medical-center.html">Rafiq Medical Center</a>
+  <a href="impact.html">Impact 2025</a>
+  <a href="donate.html">Donate</a>
+  <a href="contact.html">Contact</a>
+  <div class="sheet-sub">Islamic tools</div>
+  <a href="prayer-times.html">Prayer Times</a>
+  <a href="qibla.html" aria-current="page">Qibla Direction</a>
+  <a href="tasbeeh.html">Tasbeeh Counter</a>
+  <a href="duas.html">Duas &amp; Supplications</a>
+  <a href="hadith.html">Hadith</a>
+  <a href="names.html">99 Names of Allah</a>
+  <a href="zakat.html">Zakat Calculator</a>
+  <div class="sheet-sub" lang="ur"><a href="ur/qibla.html" class="ur" hreflang="ur">اردو ویب سائٹ</a></div>
+</div>
+
+<main id="main">
+
+<!-- ================= Tool hero ================= -->
+<section class="tool-hero pattern-star">
+  <div class="wrap reveal in">
+    <span class="kicker">Islamic tools · AKN Trust</span>
+    <h1>Qibla Direction</h1>
+    <p class="lead">The bearing to the Kaaba from your city or your exact location — with a live
+    device compass on phones that support it.</p>
+  </div>
+</section>
+
+<!-- ================= App ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="tool-shell">
+
+      <!-- Panel 1 — location -->
+      <div class="panel reveal">
+        <h2 class="mt-0" style="font-size:1.3rem">Your location</h2>
+        <div class="fields mt-2" style="align-items:end">
+          <div class="field">
+            <label for="qb-city">City</label>
+            <select id="qb-city"></select>
+          </div>
+          <div class="field">
+            <button type="button" class="btn btn-ghost" id="qb-locate">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" style="vertical-align:-3px"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              Use my location
+            </button>
+          </div>
+        </div>
+        <p class="muted mt-2" id="qb-status" role="status" aria-live="polite" style="font-size:.92rem;margin-bottom:0"></p>
+        <noscript><p class="muted mt-2">This tool needs JavaScript to calculate the qibla bearing on your device.</p></noscript>
+      </div>
+
+      <!-- Panel 2 — compass -->
+      <div class="panel reveal reveal-d1">
+        <h2 class="mt-0 center" style="font-size:1.3rem">Compass</h2>
+        <div class="compass">
+          <svg viewBox="0 0 240 240" role="img" aria-labelledby="qb-svg-title">
+            <title id="qb-svg-title">Compass rose with a gold needle pointing towards the Kaaba</title>
+            <!-- Rose -->
+            <circle cx="120" cy="120" r="96" fill="none" stroke="var(--line-2)" stroke-width="1.6"/>
+            <circle cx="120" cy="120" r="84" fill="none" stroke="var(--line)" stroke-width="1"/>
+            <!-- Minor ticks (every 15°) -->
+            <g stroke="var(--line-2)" stroke-width="1.4" stroke-linecap="round">
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(15 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(30 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(45 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(60 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(75 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(105 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(120 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(135 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(150 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(165 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(195 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(210 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(225 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(240 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(255 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(285 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(300 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(315 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(330 120 120)"/>
+              <line x1="120" y1="26" x2="120" y2="34" transform="rotate(345 120 120)"/>
+            </g>
+            <!-- Cardinal ticks -->
+            <g stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round">
+              <line x1="120" y1="24" x2="120" y2="36"/>
+              <line x1="120" y1="24" x2="120" y2="36" transform="rotate(90 120 120)"/>
+              <line x1="120" y1="24" x2="120" y2="36" transform="rotate(180 120 120)"/>
+              <line x1="120" y1="24" x2="120" y2="36" transform="rotate(270 120 120)"/>
+            </g>
+            <!-- Cardinal letters -->
+            <g font-family="inherit" font-size="13" font-weight="700" text-anchor="middle" fill="currentColor">
+              <text x="120" y="16" fill="var(--gold-2)">N</text>
+              <text x="228" y="124.5">E</text>
+              <text x="120" y="235">S</text>
+              <text x="12" y="124.5">W</text>
+            </g>
+            <!-- Needle (rotated by JS to the qibla bearing) -->
+            <g class="needle" id="qb-needle">
+              <path d="M120 200 L129 122 L120 111 L111 122 Z" fill="var(--line-2)"/>
+              <path d="M120 58 L129 120 L120 131 L111 120 Z" fill="var(--gold)"/>
+              <g aria-hidden="true">
+                <rect x="111" y="38" width="18" height="15" rx="2" fill="#20211F"/>
+                <rect x="111" y="42" width="18" height="3.4" fill="var(--gold)"/>
+              </g>
+              <circle cx="120" cy="120" r="7" fill="var(--surface)" stroke="var(--gold)" stroke-width="2.4"/>
+            </g>
+          </svg>
+        </div>
+        <p class="qibla-read" id="qb-read">Qibla is <b>—</b> from North</p>
+        <p class="muted center" id="qb-from" style="font-size:.94rem"></p>
+        <div class="center mt-2">
+          <button type="button" class="btn btn-green" id="qb-live" aria-pressed="false">Start live compass</button>
+        </div>
+        <p class="muted center mt-1" id="qb-live-status" role="status" aria-live="polite" style="font-size:.92rem;margin-bottom:0">On a phone with a compass, the needle can follow your heading — turn until it points straight up and you are facing the qibla.</p>
+      </div>
+
+      <!-- Panel 3 — the Kaaba -->
+      <div class="panel reveal reveal-d2">
+        <div class="arch-frame" style="--r-l:22px">
+          <img src="assets/img/gen-kaaba.jpg" alt="Illustration: the Kaaba draped in its black and gold kiswah" style="aspect-ratio:16/7" loading="lazy">
+        </div>
+        <p class="muted center mt-2" style="margin-bottom:0">Wherever on earth you stand, turn towards the Kaaba with calm and reverence — it is the single direction that unites every worshipper in salah.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="cta-band pattern-gold pattern-star">
+      <div class="split">
+        <div>
+          <span class="kicker" style="color:var(--gold-soft)">One direction — one ummah</span>
+          <h2>Face the qibla, then face the need</h2>
+          <p>Your zakat and sadaqah become ration, clean water, education and healthcare
+          for the deserving across Pakistan.</p>
+        </div>
+        <div>
+          <p class="mb-0"><a class="tel" href="tel:+923048012789">0304-8012789</a></p>
+          <p class="mb-2"><a class="tel" href="tel:+923134356695">0313-4356695</a></p>
+          <div class="flex g-2 wrap-row">
+            <a class="btn btn-gold" href="donate.html">Ways to give</a>
+            <a class="btn btn-ghost" style="color:#F3F7F0;border-color:rgba(255,255,255,.4)" href="prayer-times.html">Prayer times</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-foot">
+  <div class="pattern-star">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="14.5" y="14.5" width="35" height="35"/><rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/></g>
+            <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+          </svg>
+          <span class="brand-name"><b style="color:#fff">AKN Trust</b><span style="color:var(--gold)">A New Hope · Est. 2013</span></span>
+        </div>
+        <p>Anwar Khatm-e-Nabuwat Trust Pakistan — defending the finality of Prophethood ﷺ and
+        serving humanity: ration, water, homes, education, healthcare and the support of new
+        Muslims across Pakistan.</p>
+        <p class="ur" lang="ur" dir="rtl" style="color:var(--gold-soft)">انوار ختم نبوت ٹرسٹ پاکستان</p>
+      </div>
+      <nav aria-label="Footer — Trust">
+        <div class="foot-title">The Trust</div>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="medical-center.html">Rafiq Medical Center</a></li>
+          <li><a href="impact.html">Impact 2025</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer — Tools">
+        <div class="foot-title">Tools</div>
+        <ul>
+          <li><a href="prayer-times.html">Prayer Times</a></li>
+          <li><a href="qibla.html">Qibla Direction</a></li>
+          <li><a href="tasbeeh.html">Tasbeeh Counter</a></li>
+          <li><a href="duas.html">Duas &amp; Supplications</a></li>
+          <li><a href="hadith.html">Hadith</a></li>
+          <li><a href="names.html">99 Names of Allah</a></li>
+          <li><a href="zakat.html">Zakat Calculator</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div class="foot-title">Contact</div>
+        <ul class="foot-contact">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Markaz: Chenab Nagar (Mohalla Nusratabad), District Chiniot, Punjab</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>55-Ghani Street, Rajgarh, Lahore</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></svg><a href="tel:+923048012789" style="display:inline;padding:0">0304-8012789</a> · <a href="tel:+923134356695" style="display:inline;padding:0">0313-4356695</a></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>Monthly magazine «Anwar Khatm-e-Nabuwat» · AKN63Channel</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> Anwar Khatm-e-Nabuwat Trust Pakistan. All rights reserved.</span>
+      <span lang="ar" dir="rtl" class="ar" style="font-size:1.05em">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</span>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script>
+window.AKN_L10N = {
+  prayers: { fajr:'Fajr', sunrise:'Sunrise', dhuhr:'Dhuhr', asr:'Asr', maghrib:'Maghrib', isha:'Isha' },
+  inLabel: 'in ', h: 'h ', m: 'm'
+};
+</script>
+<script src="assets/js/prayer.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script>
+/* Qibla page app — runs after the deferred engine scripts, on DOMContentLoaded */
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+  if (!window.AKNPrayer) return;
+  var P = window.AKNPrayer;
+  var lang = document.documentElement.lang === 'ur' ? 'ur' : 'en';
+
+  var citySel    = document.getElementById('qb-city');
+  var locBtn     = document.getElementById('qb-locate');
+  var statusEl   = document.getElementById('qb-status');
+  var needle     = document.getElementById('qb-needle');
+  var readEl     = document.getElementById('qb-read');
+  var fromEl     = document.getElementById('qb-from');
+  var liveBtn    = document.getElementById('qb-live');
+  var liveStatus = document.getElementById('qb-live-status');
+
+  var state = { city: P.CITIES[0], custom: null };
+  var bearing = 0;
+  var live = false, handler = null, evName = null, gotReading = false, watchdog = null;
+  var prevRot = 0;
+
+  /* Restore saved city */
+  try {
+    var saved = JSON.parse(localStorage.getItem('akn-city') || 'null');
+    if (saved) P.CITIES.forEach(function (c) { if (c.id === saved) state.city = c; });
+  } catch (e) {}
+
+  /* Populate city select */
+  P.CITIES.forEach(function (c) {
+    var o = document.createElement('option');
+    o.value = c.id;
+    o.textContent = lang === 'ur' ? c.ur : c.en;
+    citySel.appendChild(o);
+  });
+  citySel.value = state.city.id;
+
+  function loc() { return state.custom || state.city; }
+  function locName(l) { return lang === 'ur' ? l.ur : l.en; }
+
+  /* Rotate along the shortest arc, so the .3s transition never spins the long way round */
+  function setRot(deg) {
+    var delta = ((deg - prevRot) % 360 + 540) % 360 - 180;
+    prevRot += delta;
+    needle.style.transform = 'rotate(' + prevRot + 'deg)';
+  }
+
+  function render() {
+    var l = loc();
+    bearing = P.qibla(l.lat, l.lng);
+    var dist = Math.round(P.distanceKm(l.lat, l.lng));
+    if (!live) setRot(bearing);
+    readEl.innerHTML = 'Qibla is <b>' + bearing + '&deg;</b> from North &middot; ' +
+      dist.toLocaleString('en-GB') + ' km to the Kaaba';
+    fromEl.textContent = 'From ' + locName(l) +
+      (state.custom ? ' (' + l.lat.toFixed(3) + '°, ' + l.lng.toFixed(3) + '°)' : '') +
+      ' — with the compass rose held so that N points North, the gold needle shows the direction of salah.';
+  }
+
+  /* Events — location */
+  citySel.addEventListener('change', function () {
+    if (citySel.value === '__geo' && state.custom) { render(); return; }
+    P.CITIES.forEach(function (c) { if (c.id === citySel.value) state.city = c; });
+    state.custom = null;
+    try { localStorage.setItem('akn-city', JSON.stringify(state.city.id)); } catch (e) {}
+    statusEl.textContent = '';
+    render();
+  });
+
+  locBtn.addEventListener('click', function () {
+    if (!('geolocation' in navigator)) {
+      statusEl.textContent = 'Location is not available in this browser — please choose your city from the list.';
+      return;
+    }
+    statusEl.textContent = 'Finding your location…';
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      state.custom = {
+        en: 'My location', ur: 'میرا مقام',
+        lat: pos.coords.latitude, lng: pos.coords.longitude,
+        tz: 'Asia/Karachi'
+      };
+      var opt = document.getElementById('qb-geo-opt');
+      if (!opt) {
+        opt = document.createElement('option');
+        opt.id = 'qb-geo-opt'; opt.value = '__geo';
+        citySel.appendChild(opt);
+      }
+      opt.textContent = locName(state.custom);
+      citySel.value = '__geo';
+      statusEl.textContent = 'Using your precise location for the most accurate bearing.';
+      render();
+    }, function () {
+      statusEl.textContent = 'We could not read your location — please choose your city from the list.';
+    }, { timeout: 12000, maximumAge: 300000 });
+  });
+
+  /* Live compass */
+  function headingOf(e) {
+    if (typeof e.webkitCompassHeading === 'number' && !isNaN(e.webkitCompassHeading)) {
+      return e.webkitCompassHeading;                       /* iOS Safari */
+    }
+    if (e.alpha != null && (e.absolute === true || evName === 'deviceorientationabsolute')) {
+      return (360 - e.alpha) % 360;                        /* Android / absolute orientation */
+    }
+    return null;
+  }
+
+  function stopLive(msg) {
+    if (handler) window.removeEventListener(evName, handler);
+    handler = null;
+    live = false;
+    if (watchdog) { clearTimeout(watchdog); watchdog = null; }
+    liveBtn.setAttribute('aria-pressed', 'false');
+    liveBtn.textContent = 'Start live compass';
+    setRot(bearing);
+    if (msg) liveStatus.textContent = msg;
+  }
+
+  function startLive() {
+    evName = ('ondeviceorientationabsolute' in window) ? 'deviceorientationabsolute' : 'deviceorientation';
+    gotReading = false;
+    handler = function (e) {
+      var h = headingOf(e);
+      if (h == null) return;
+      gotReading = true;
+      setRot(bearing - h);
+      liveStatus.textContent = 'Live — your heading is ' + Math.round(h) +
+        '°. Hold the phone flat and turn until the needle points straight up.';
+    };
+    window.addEventListener(evName, handler);
+    live = true;
+    liveBtn.setAttribute('aria-pressed', 'true');
+    liveBtn.textContent = 'Stop live compass';
+    liveStatus.textContent = 'Waiting for the compass — hold your phone flat…';
+    watchdog = setTimeout(function () {
+      if (!gotReading) {
+        stopLive('Your device did not report a compass heading. Use the bearing above with a map or a physical compass instead.');
+      }
+    }, 3000);
+  }
+
+  liveBtn.addEventListener('click', function () {
+    if (live) { stopLive('Live compass stopped — the needle shows the fixed bearing again.'); return; }
+    if (typeof DeviceOrientationEvent === 'undefined') {
+      liveStatus.textContent = 'This device has no motion sensors — use the bearing above with a map or a physical compass.';
+      return;
+    }
+    if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+      /* iOS 13+ requires an explicit permission prompt from a user gesture */
+      DeviceOrientationEvent.requestPermission().then(function (result) {
+        if (result === 'granted') startLive();
+        else liveStatus.textContent = 'Motion permission was declined — the needle keeps showing the fixed bearing above.';
+      }).catch(function () {
+        liveStatus.textContent = 'Motion permission could not be requested — the needle keeps showing the fixed bearing above.';
+      });
+    } else {
+      startLive();
+    }
+  });
+
+  render();
+});
+</script>
+</body>
+</html>

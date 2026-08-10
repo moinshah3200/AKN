@@ -1,0 +1,8 @@
+# Working artefacts — not part of the deployable site
+_tools/shots/
+_tools/img-src/
+_tools/pdfpages/
+_tools/*.log
+_tools/AKN_PDF_TEXT.txt
+Thumbs.db
+.DS_Store

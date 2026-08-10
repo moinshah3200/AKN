@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasbeeh Counter — AKN Trust</title>
+<meta name="description" content="A digital tasbeeh from AKN Trust — count the Sunnah adhkar with targets, laps and daily totals. Twelve authentic dhikr with Arabic, transliteration, meaning and virtue, saved on your device.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="alternate" hreflang="ur" href="ur/tasbeeh.html">
+<link rel="alternate" hreflang="en" href="tasbeeh.html">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function(){try{var t=localStorage.getItem('akn-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+</script>
+<meta name="theme-color" content="#0B4A38">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= Header ================= -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="AKN Trust — home">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2.2">
+          <rect x="14.5" y="14.5" width="35" height="35"/>
+          <rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/>
+        </g>
+        <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+      </svg>
+      <span class="brand-name">
+        <b>AKN Trust</b>
+        <span>Anwar Khatm-e-Nabuwat</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="medical-center.html">Medical Center</a>
+      <a href="impact.html">Impact</a>
+      <div class="navdrop" data-drop>
+        <button class="navbtn" aria-expanded="false" aria-haspopup="true">Tools
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="menu" role="menu">
+          <a href="prayer-times.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Prayer Times</a>
+          <a href="qibla.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/></svg>Qibla Direction</a>
+          <a href="tasbeeh.html" aria-current="page"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="1.6"/><circle cx="6.5" cy="8.5" r="1.6"/><circle cx="17.5" cy="8.5" r="1.6"/><circle cx="5" cy="14.5" r="1.6"/><circle cx="19" cy="14.5" r="1.6"/><circle cx="8.5" cy="19" r="1.6"/><circle cx="15.5" cy="19" r="1.6"/></svg>Tasbeeh Counter</a>
+          <a href="duas.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21Z"/><path d="M4 18.5V5.5"/></svg>Duas &amp; Supplications</a>
+          <a href="hadith.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M12 4c-2-1.6-4.6-2-8-2v16c3.4 0 6 .4 8 2 2-1.6 4.6-2 8-2V2c-3.4 0-6 .4-8 2Z"/><path d="M12 4v16"/></svg>Hadith</a>
+          <a href="names.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="m12 2 2.4 7.2H22l-6 4.5 2.3 7.3-6.3-4.5-6.3 4.5L8 13.7l-6-4.5h7.6Z"/></svg>99 Names of Allah</a>
+          <a href="zakat.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h3.6a1.9 1.9 0 0 1 0 3.8H10.8a1.9 1.9 0 0 0 0 3.8h4"/></svg>Zakat Calculator</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="head-actions">
+      <a class="lang-link" href="ur/tasbeeh.html" lang="ur" hreflang="ur" title="اردو میں دیکھیں"><span class="ur">اردو</span></a>
+      <button class="iconbtn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="i-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="i-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2m0 14.6v2.2M2.5 12h2.2m14.6 0h2.2M5 5l1.6 1.6M17.4 17.4 19 19M5 19l1.6-1.6M17.4 6.6 19 5"/></svg>
+      </button>
+      <a class="btn btn-gold donate-head" href="donate.html">Donate</a>
+      <button class="iconbtn burger" data-burger aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3.5 6.5h17m-17 5.5h17m-17 5.5h17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile sheet -->
+<div class="sheet" data-sheet>
+  <button class="iconbtn sheet-close" data-sheet-close aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+  </button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About the Trust</a>
+  <a href="departments.html">Departments</a>
+  <a href="medical-center.html">Rafiq Medical Center</a>
+  <a href="impact.html">Impact 2025</a>
+  <a href="donate.html">Donate</a>
+  <a href="contact.html">Contact</a>
+  <div class="sheet-sub">Islamic tools</div>
+  <a href="prayer-times.html">Prayer Times</a>
+  <a href="qibla.html">Qibla Direction</a>
+  <a href="tasbeeh.html" aria-current="page">Tasbeeh Counter</a>
+  <a href="duas.html">Duas &amp; Supplications</a>
+  <a href="hadith.html">Hadith</a>
+  <a href="names.html">99 Names of Allah</a>
+  <a href="zakat.html">Zakat Calculator</a>
+  <div class="sheet-sub" lang="ur"><a href="ur/tasbeeh.html" class="ur" hreflang="ur">اردو ویب سائٹ</a></div>
+</div>
+
+<main id="main">
+
+<!-- ================= Tool hero ================= -->
+<section class="tool-hero pattern-star">
+  <div class="wrap reveal in">
+    <span class="kicker">Islamic tools</span>
+    <h1>Tasbeeh Counter</h1>
+    <p class="lead">A misbaha in your pocket — twelve authentic adhkar with their targets and
+    virtues. Your counts are saved on this device, with today&rsquo;s total and a lifetime total
+    for every dhikr.</p>
+  </div>
+</section>
+
+<!-- ================= App ================= -->
+<section class="section">
+  <div class="wrap tool-shell">
+
+    <!-- Panel 1 — choose the dhikr -->
+    <div class="panel reveal in">
+      <div class="fields">
+        <div class="field">
+          <label for="tas-select">Choose your dhikr</label>
+          <select id="tas-select"></select>
+        </div>
+      </div>
+      <div class="tas-ar">
+        <span class="ar" lang="ar" dir="rtl" data-tas-arabic></span>
+      </div>
+      <p class="center muted" style="text-align:center;font-style:italic;margin:6px auto 0;max-width:60ch" data-tas-translit></p>
+      <p class="center" style="text-align:center;margin:6px auto 0;max-width:60ch" data-tas-meaning></p>
+      <p class="muted" style="text-align:center;font-size:.9rem;margin:10px auto 0;max-width:62ch" data-tas-virtue></p>
+      <div style="display:flex;justify-content:center;margin-top:12px"><span class="chip" data-tas-src></span></div>
+      <noscript><p class="muted" style="text-align:center;margin-top:14px">The tasbeeh counter needs JavaScript to run. Please enable JavaScript, or keep count on your fingers — the Sunnah way.</p></noscript>
+    </div>
+
+    <!-- Panel 2 — the counter -->
+    <div class="panel reveal in">
+      <button class="tas-count" type="button" id="tas-btn" aria-describedby="tas-hint">
+        <span data-tas-num>0</span>
+        <small data-tas-prog>0 / 33</small>
+      </button>
+      <p id="tas-hint" class="muted" style="text-align:center;font-size:.9rem;margin:0">Tap the circle — or press <kbd>Space</kbd> / <kbd>Enter</kbd> — to count. Each tap gives a gentle vibration where supported.</p>
+      <p style="text-align:center;margin:12px 0 0;min-height:2em" role="status" aria-live="polite" data-tas-status></p>
+      <div class="tas-meta">
+        <span>Today <b data-tas-today>0</b></span>
+        <span>Laps today <b data-tas-laps>0</b></span>
+        <span>Lifetime <b data-tas-life>0</b></span>
+      </div>
+      <div class="tas-actions">
+        <button class="btn btn-ghost" type="button" id="tas-reset-count">Reset count</button>
+        <button class="btn btn-ghost" type="button" id="tas-reset-all">Reset all dhikr</button>
+      </div>
+    </div>
+
+    <!-- Panel 3 — image strip -->
+    <div class="panel reveal in" style="padding:0;overflow:hidden">
+      <div class="arch-frame" style="--r-l:22px">
+        <img src="assets/img/gen-tasbeeh.jpg" alt="Illustrative close-up of misbaha prayer beads" loading="lazy" style="aspect-ratio:16/6">
+      </div>
+      <p class="muted" style="text-align:center;font-size:.9rem;padding:14px 18px">&ldquo;The best of people are those who bring the most benefit to people&rdquo; — remember Allah often, and let your dhikr flow into service of His creation.</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-foot">
+  <div class="pattern-star">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.2"><rect x="14.5" y="14.5" width="35" height="35"/><rect x="14.5" y="14.5" width="35" height="35" transform="rotate(45 32 32)"/></g>
+            <path fill="currentColor" d="M35.5 19.5a13 13 0 1 0 0 25 10.4 10.4 0 1 1 0-25Z"/>
+          </svg>
+          <span class="brand-name"><b style="color:#fff">AKN Trust</b><span style="color:var(--gold)">A New Hope · Est. 2013</span></span>
+        </div>
+        <p>Anwar Khatm-e-Nabuwat Trust Pakistan — defending the finality of Prophethood ﷺ and
+        serving humanity: ration, water, homes, education, healthcare and the support of new
+        Muslims across Pakistan.</p>
+        <p class="ur" lang="ur" dir="rtl" style="color:var(--gold-soft)">انوار ختم نبوت ٹرسٹ پاکستان</p>
+      </div>
+      <nav aria-label="Footer — Trust">
+        <div class="foot-title">The Trust</div>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="medical-center.html">Rafiq Medical Center</a></li>
+          <li><a href="impact.html">Impact 2025</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Footer — Tools">
+        <div class="foot-title">Tools</div>
+        <ul>
+          <li><a href="prayer-times.html">Prayer Times</a></li>
+          <li><a href="qibla.html">Qibla Direction</a></li>
+          <li><a href="tasbeeh.html">Tasbeeh Counter</a></li>
+          <li><a href="duas.html">Duas &amp; Supplications</a></li>
+          <li><a href="hadith.html">Hadith</a></li>
+          <li><a href="names.html">99 Names of Allah</a></li>
+          <li><a href="zakat.html">Zakat Calculator</a></li>
+        </ul>
+      </nav>
+      <div>
+        <div class="foot-title">Contact</div>
+        <ul class="foot-contact">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Markaz: Chenab Nagar (Mohalla Nusratabad), District Chiniot, Punjab</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg><span>55-Ghani Street, Rajgarh, Lahore</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></svg><a href="tel:+923048012789" style="display:inline;padding:0">0304-8012789</a> · <a href="tel:+923134356695" style="display:inline;padding:0">0313-4356695</a></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>Monthly magazine «Anwar Khatm-e-Nabuwat» · AKN63Channel</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> Anwar Khatm-e-Nabuwat Trust Pakistan. All rights reserved.</span>
+      <span lang="ar" dir="rtl" class="ar" style="font-size:1.05em">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</span>
+    </div>
+  </div>
+  </div>
+</footer>
+
+<script>
+window.AKN_L10N = {
+  prayers: { fajr:'Fajr', sunrise:'Sunrise', dhuhr:'Dhuhr', asr:'Asr', maghrib:'Maghrib', isha:'Isha' },
+  inLabel: 'in ', h: 'h ', m: 'm'
+};
+</script>
+<script src="assets/js/data/tasbeeh.data.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+  if (!window.AKN_TASBEEH || !AKN_TASBEEH.items || !AKN_TASBEEH.items.length) return;
+
+  var KEY = 'akn-tasbeeh';
+  var items = AKN_TASBEEH.items;
+
+  var select  = document.getElementById('tas-select');
+  var btn     = document.getElementById('tas-btn');
+  var numEl   = document.querySelector('[data-tas-num]');
+  var progEl  = document.querySelector('[data-tas-prog]');
+  var arEl    = document.querySelector('[data-tas-arabic]');
+  var trEl    = document.querySelector('[data-tas-translit]');
+  var meanEl  = document.querySelector('[data-tas-meaning]');
+  var virtEl  = document.querySelector('[data-tas-virtue]');
+  var srcEl   = document.querySelector('[data-tas-src]');
+  var statEl  = document.querySelector('[data-tas-status]');
+  var todayEl = document.querySelector('[data-tas-today]');
+  var lapsEl  = document.querySelector('[data-tas-laps]');
+  var lifeEl  = document.querySelector('[data-tas-life]');
+  var rstOne  = document.getElementById('tas-reset-count');
+  var rstAll  = document.getElementById('tas-reset-all');
+
+  function todayStr() {
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; }
+  }
+  function save(state) {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* private mode — counts stay in memory */ }
+  }
+  function record(state, id) {
+    var t = todayStr();
+    var r = state[id];
+    if (!r || typeof r !== 'object') r = state[id] = { count: 0, today: 0, date: t, life: 0 };
+    if (r.date !== t) { r.date = t; r.today = 0; }
+    return r;
+  }
+  function fmt(n) { return Number(n || 0).toLocaleString('en-GB'); }
+
+  var state = load();
+  var current = items[0];
+
+  // Build the select — short labels from the first clause of the transliteration.
+  items.forEach(function (it) {
+    var opt = document.createElement('option');
+    opt.value = it.id;
+    opt.textContent = it.translit.split(/[,،.]/)[0].trim();
+    select.appendChild(opt);
+  });
+
+  function render() {
+    var r = record(state, current.id);
+    arEl.textContent   = current.ar;
+    trEl.textContent   = current.translit;
+    meanEl.textContent = current.en;
+    virtEl.textContent = current.virtue_en;
+    srcEl.textContent  = current.src;
+    numEl.textContent  = fmt(r.count);
+    progEl.textContent = fmt(r.count) + ' / ' + fmt(current.target);
+    btn.setAttribute('aria-label', 'Count ' + current.translit.split(/[,،.]/)[0].trim() + ' — ' + r.count + ' of ' + current.target);
+    todayEl.textContent = fmt(r.today);
+    lifeEl.textContent  = fmt(r.life);
+    lapsEl.textContent  = fmt(Math.floor(r.today / current.target));
+  }
+
+  var statusTimer = null;
+  function announceSet() {
+    statEl.innerHTML = '<span class="chip chip-gold">Set complete — SubhanAllah</span>';
+    clearTimeout(statusTimer);
+    statusTimer = setTimeout(function () { statEl.textContent = ''; }, 2600);
+  }
+
+  btn.addEventListener('click', function () {
+    var r = record(state, current.id);
+    r.count += 1; r.today += 1; r.life += 1;
+    if (navigator.vibrate) { try { navigator.vibrate(12); } catch (e) {} }
+    if (r.count >= current.target) {
+      r.count = 0;               // auto-advance to the next lap
+      announceSet();
+      if (navigator.vibrate) { try { navigator.vibrate([12, 60, 24]); } catch (e) {} }
+    }
+    save(state);
+    render();
+  });
+
+  select.addEventListener('change', function () {
+    var found = items.filter(function (it) { return it.id === select.value; })[0];
+    if (found) { current = found; render(); }
+  });
+
+  // Double-press confirmation for the reset buttons.
+  function armable(el, action) {
+    var timer = null, orig = el.textContent;
+    el.addEventListener('click', function () {
+      if (el.dataset.armed) {
+        clearTimeout(timer);
+        delete el.dataset.armed;
+        el.textContent = orig;
+        action();
+      } else {
+        el.dataset.armed = '1';
+        el.textContent = 'Press again to confirm';
+        timer = setTimeout(function () { delete el.dataset.armed; el.textContent = orig; }, 3500);
+      }
+    });
+  }
+  armable(rstOne, function () {
+    record(state, current.id).count = 0;
+    save(state);
+    render();
+  });
+  armable(rstAll, function () {
+    state = {};
+    save(state);
+    render();
+  });
+
+  render();
+});
+</script>
+</body>
+</html>
