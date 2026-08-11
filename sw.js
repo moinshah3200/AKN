@@ -1,6 +1,6 @@
 /* AKN service worker — offline-friendly runtime cache (same-origin, cache-first
    for assets, network-first for pages). */
-var CACHE = 'akn-v1';
+var CACHE = 'akn-v2';
 var CORE = [
   './index.html',
   './assets/css/style.css',

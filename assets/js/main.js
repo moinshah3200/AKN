@@ -17,6 +17,13 @@
     applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
   });
 
+  /* ---------- Language choice (Urdu is the default; English is opt-in) ---------- */
+  document.querySelectorAll('a[hreflang]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('akn-lang', a.getAttribute('hreflang')); } catch (e) {}
+    });
+  });
+
   /* ---------- Mobile sheet ---------- */
   var burger = document.querySelector('[data-burger]');
   var sheet = document.querySelector('[data-sheet]');
